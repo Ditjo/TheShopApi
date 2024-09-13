@@ -15,8 +15,9 @@ public class Product {
     private double Price;
     private int Amount;
 //    private int ImageResId;
-    private Categories Category;
-
+//    private Categories Category;
+    private String Category;
+    private String imageUrl;
     public int getId() {
         return Id;
     }
@@ -57,11 +58,19 @@ public class Product {
         Amount = amount;
     }
 
-    public Categories getCategory() {
+    public String getCategory() {
         return Category;
     }
 
-    public void setCategory(Categories category) {
+    public void setCategory(String category) {
         Category = category;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
